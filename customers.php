@@ -53,15 +53,6 @@ body,html {
     height: 75vh;
     width: 75vw;
     color: black;
-
-}
-#box h1{
-  color: black;
-  width: 3px;
-  margin-left: auto;
-  margin-right:auto;
-  position: center;
-
 }
 table
 	{
@@ -138,7 +129,7 @@ tr:hover {background-color: #38ef7d;color: #000000;}
   <a href="Mtransfer.php">Fund Transfer</a>
 </div>
 
-  <div id="box">
+<div id="box">
 <h1>Customers</h1>
 
 <table align="center" class="tableus">

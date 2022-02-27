@@ -1,4 +1,3 @@
-	
 <?php
 include 'dbconnection.php';
 		error_reporting(0);
@@ -20,17 +19,32 @@ include 'dbconnection.php';
   margin: 0;
   text-decoration: none;
 }
+
 body,html {
   background-image: linear-gradient(#000000, #202020);
   height: 100%;  
   font-family: 'Poppins', sans-serif;
 }
-#box{
-  margin-top: 25px;
+/* #box{
+  margin-top: 15px;
   height: 400px;
   width: 400px;
   color: black;
+} */
 
+h1{
+  text-align:center;
+  width:100%;
+  margin-top: 100px;
+  margin-left:auto;
+  margin-right:auto;
+  color: white;
+}
+
+.main {
+  position: center;
+  margin-right: 38%;
+  margin-left: auto;
 }
 
 .navbar {
@@ -53,18 +67,11 @@ body,html {
 
 /* Change background on mouse-over */
 .navbar a:hover {
-  background: #f1d18a;
+  background: #38ef7d;;
   color: black;
 }
 
-h1{
-  text-align:center;
-  margin-top:50px;
-  width:80%;
-  margin-left:50%;
-  margin-right:auto;
-  color: white;
-}
+
 .transferform{
 		width: 800px;
 		background-color: #020305;
@@ -147,10 +154,10 @@ form {
 
 #submit{
     position: relative;
-    margin-left: 50%;
+    margin-left: 75%;
     margin-top: 25px;
     padding:5px 15px; 
-    background-color:#f1d18a;
+    background-color:#38ef7d;
     color: black;
     border:0 none;
     cursor:pointer;
@@ -160,8 +167,8 @@ form {
     font-size: 20px;
 }
 #submit:hover {
-   background-color: #fa7f72;
-   color: black;
+   background-color: #38ef7d;
+   box-shadow: 0px 14px 56px -11px #38ef7d;
    }
 
 
@@ -178,7 +185,6 @@ form {
 
   padding: 10px 0;
   width: 100%;
-  background-color: black ;
 }
 
 .logo{
