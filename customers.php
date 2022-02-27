@@ -5,22 +5,26 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-:root {
+/* :root {
   --main-color: #020305 ;
-}
+} */
 
 *{
   padding: 0;
   margin: 0;
   text-decoration: none;
 }
-body {
-  background-color: #020305;
+body,html {
+  background-image: linear-gradient(#000000, #202020);
+  height: 100%;
+    
 }
 .navbar {
+  font-family: 'Poppins', sans-serif;
   overflow: hidden;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0);
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
@@ -28,7 +32,6 @@ body {
 
 /* Links inside the navbar */
 .navbar a {
-  font-family: 'Nunito';
   float: left;
   display: block;
   color: #f2f2f2;
@@ -39,7 +42,7 @@ body {
 
 /* Change background on mouse-over */
 .navbar a:hover {
-  background: #f1d18a;
+  background: #38ef7d;
   color: black;
 }
 #box{
@@ -50,7 +53,6 @@ body {
     height: 75vh;
     width: 75vw;
     color: black;
-    font-family: 'Nunito';
 
 }
 #box h1{
@@ -66,8 +68,9 @@ table
 		border-collapse: collapse;
 		width: 100%;
 		color: white;
-		font-family: 'Nunito';
-		font-size: 25px;
+		font-family: 'Poppins', sans-serif;
+		font-size: 24px;
+    font-weight: 300;
 		text-align: center;
 		position:center;
 		margin-top: auto;
@@ -76,14 +79,16 @@ table
 }
 th 
 {
-  background-color: #f1d18a;
+  background-color: #38ef7d;
   color: black;
+  font-weight: normal;
+  font-size: 22px
 }
 tr:nth-child(odd) 
 {
-  background-color: #232931;
+  background-color: #202020;
 }
-tr:hover {background-color: #f1d18a;}
+tr:hover {background-color: #38ef7d;color: #000000;}
 
 
 
@@ -96,10 +101,8 @@ tr:hover {background-color: #f1d18a;}
   display: flex;
   justify-content: center;
   align-items: center;
-
   padding: 10px 0;
   width: 100%;
-  background-color: black ;
 }
 
 .logo{
@@ -115,7 +118,8 @@ tr:hover {background-color: #f1d18a;}
 }
 
 .footer__rights{
-  font-family: 'Nunito';
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
   color: white;
 }
 
@@ -185,7 +189,7 @@ $conn->close();
  
     
   <div class="footer__rights">
-  <b>All rights reserved|2020  </b>
+  <p>All rights reserved | 2022  </p>
    
   </div>
 </footer>
