@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-    <title>Customers</title>
+    <title>Transactions</title>
 </head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
@@ -68,6 +68,16 @@ table
     padding:15px;
    
 }
+h1{
+  text-align:center;
+  width:100%;
+  margin-top: 100px;
+  margin-left:auto;
+  margin-right:auto;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+
+}
 th 
 {
   background-color: #38ef7d;
@@ -117,16 +127,6 @@ tr:hover {background-color: #38ef7d;color: #000000;}
 .footer__rights a{
   color: white;
 }
-h1{
-  text-align:center;
-  width:100%;
-  margin-top: 100px;
-  margin-left:auto;
-  margin-right:auto;
-  color: white;
-  font-family: 'Poppins', sans-serif;
-
-}
 
 .footer__rights a:hover{
   text-decoration: none;
@@ -139,13 +139,13 @@ h1{
   <a href="Mtransfer.php">Fund Transfer</a>
 </div>
 
-<h1 class='h1'>Customers</h1>
+<h1 class='h1'>Transactions</h1>
 <br>
 <table align="center" class="tableus">
 		<tr>
-			<th>Account. Number</th>
-			<th>Name</th>
-			<th>Balance(In INR)</th>
+			<th>Sender</th>
+			<th>Reciever</th>
+			<th>Amount</th>
     </tr>
 		
 
@@ -158,13 +158,13 @@ if ($conn->connect_error)
 die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "SELECT acc_no,name,balance FROM bank";
+$sql = "SELECT sender,reciever,amount FROM transfer";
 $result = $conn->query($sql);
 if ($result->num_rows > 0) 
 {
 	while($row = $result->fetch_assoc()) 
 	{
-		echo "<tr><td>" . $row["acc_no"]. "</td><td>" . $row["name"] . "</td><td>". $row["balance"]. "</td> </tr>";
+		echo "<tr><td>" . $row["sender"]. "</td><td>" . $row["reciever"] . "</td><td>". $row["amount"]. "</td> </tr>";
 	}
 echo "</table>";
 } 
