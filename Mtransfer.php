@@ -53,6 +53,8 @@ h1{
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
+  background-color: #000000;
+
 }
 
 /* Links inside the navbar */
