@@ -1,5 +1,5 @@
-# Sparks-Foundation-Banking-Website
-A simple banking website based on PHP for Sparks Foundation GRIP Program
+# Simple-Banking-Website
+A simple banking website based on PHP for DBMS Mini Project
 
 ## Steps for Setting Up
 1. Clone the repo
