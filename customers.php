@@ -34,7 +34,7 @@ body,html {
 
 /* Links inside the navbar */
 .navbar a {
-  float: left;
+  float: right;
   display: block;
   color: #f2f2f2;
   text-align: center;
@@ -136,9 +136,9 @@ h1{
 </style>
 <body>
 <div class="navbar">
+<a href="Mtransfer.php">Fund Transfer</a>
+<a href="customers.php">Customers</a>
   <a href="bankmain.php">Home</a>
-  <a href="customers.php">Customers</a>
-  <a href="Mtransfer.php">Fund Transfer</a>
 </div>
 
 <h1 class='h1'>Customers</h1>

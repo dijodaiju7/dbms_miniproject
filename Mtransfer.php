@@ -59,7 +59,7 @@ h1{
 
 /* Links inside the navbar */
 .navbar a {
-  float: left;
+  float: right;
   display: block;
   color: #f2f2f2;
   text-align: center;
@@ -216,9 +216,9 @@ form {
 </style>
 <body>
 <div class="navbar">
+<a href="Mtransfer.php">Fund Transfer</a>
+<a href="customers.php">Customers</a>
   <a href="bankmain.php">Home</a>
-  <a href="customers.php">Customers</a>
-  <a href="transfer.php">Fund Transfer</a>
 </div>
   <div id="box">
 <h1 class='Fund'>Fund Transfer</h1>

@@ -35,8 +35,9 @@ body, html {
 /* Links inside the navbar */
 .navbar a {
   font-family: 'Poppins', sans-serif;
-  float: left;
+  float: right;
   display: block;
+ 
   color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
@@ -148,9 +149,9 @@ button {
 </div>
 
 <div class="navbar">
+<a href="Mtransfer.php">Fund Transfer</a>
+<a href="customers.php">Customers</a>
   <a href="bankmain.php">Home</a>
-  <a href="customers.php">Customers</a>
-  <a href="Mtransfer.php">Fund Transfer</a>
 </div>
 
 
