@@ -4,27 +4,70 @@
     <title>Success</title>
 </head>
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    :root {
+	--green:   #28AF63;
+	;
+}
+	body {
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+    background-image: linear-gradient(#000000, #202020);
+}
+div.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+div > div {
+	width: 3vw;
+	height: 3vw;
+	border-radius: 100%;
+	margin: 2vw;
+	background-image: linear-gradient(145deg, rgba(255,255,255,0.5) 0%, rgba(0,0,0,0) 100%);
+	animation: bounce 1.5s 0.5s linear infinite;
+}
+.green1 {
+	background-color: var(--green);
+}
 
-    #font{
-        color: white;
-        font-family: 'Poppins', sans-serif;
-        font-size: x-large;
-        margin-top: 20px;
-    }
-    .body {
-        background-image: linear-gradient(#000000, #202020);
-    }
+.green2 {
+	background-color: var(--green);
+	animation-delay: 0.1s;
+}
 
+.green3 {
+	background-color: var(--green);
+	animation-delay: 0.2s;
+}
+
+.green4 {
+	background-color: var(--green);
+	animation-delay: 0.3s;
+}
+
+@keyframes bounce {
+	0%, 50%, 100% {
+		transform: scale(1);
+		filter: blur(0px);
+	}
+	25% {
+		transform: scale(0.6);
+		filter: blur(3px);
+	}
+	75% {
+		filter: blur(3px);
+		transform: scale(1.4);
+	}
+}
 </style>
-<body>
-    <center>
-    <img src="transfer.svg" alt="success" height="150px" width="150px"><br>
-    <div id="font">
-        <b>Transfer Successful</b><br>
-        You are being directed to the Homepage...Please Wait.
-    </div>
-    </center>
+<div class="container">
+	<div class="green1"></div>
+	<div class="green2"></div>
+	<div class="green3"></div>
+	<div class="green4"></div>
+</div>
 </body>
 </html>

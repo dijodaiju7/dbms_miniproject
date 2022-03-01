@@ -214,7 +214,7 @@ form {
 </style>
 <body>
 <div class="navbar">
-  <a href="index.php">Home</a>
+  <a href="bankmain.php">Home</a>
   <a href="customers.php">Customers</a>
   <a href="transfer.php">Fund Transfer</a>
 </div>
@@ -308,14 +308,7 @@ form {
 
 <!-- FOOTER -->
 
-<footer class="footer">
- 
-      
-  <div class="footer__rights">
-    <b>All rights reserved|2020</b>
-   
-  </div>
-</footer>
+
 </body>
 </html>
 <script>

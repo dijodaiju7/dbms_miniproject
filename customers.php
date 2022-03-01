@@ -124,7 +124,7 @@ tr:hover {background-color: #38ef7d;color: #000000;}
 </style>
 <body>
 <div class="navbar">
-  <a href="index.php">Home</a>
+  <a href="bankmain.php">Home</a>
   <a href="customers.php">Customers</a>
   <a href="Mtransfer.php">Fund Transfer</a>
 </div>
@@ -176,14 +176,6 @@ $conn->close();
 
 <!-- FOOTER -->
 
-<footer class="footer">
- 
-    
-  <div class="footer__rights">
-  <p>All rights reserved | 2022  </p>
-   
-  </div>
-</footer>
 
 </table>
 
