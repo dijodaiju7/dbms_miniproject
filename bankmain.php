@@ -33,16 +33,17 @@ body, html {
 }
 
 /* Links inside the navbar */
+.navbar {
+  display: inline-block;
+  text-align: center;
+  padding: 14px;
+}
+
 .navbar a {
   font-family: 'Poppins', sans-serif;
-  float: right;
-  display: block;
- 
   color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
+  padding: 14px;
   text-decoration: none;
-  text-align: center;
 }
 
 /* Change background on mouse-over */
@@ -151,7 +152,9 @@ button {
 <div class="navbar">
 <a href="Mtransfer.php">Fund Transfer</a>
 <a href="customers.php">Customers</a>
-  <a href="bankmain.php">Home</a>
+  <a href="deposit.php">Deposit</a>
+  <a href="transaction.php">Transaction</a>
+  <a href="withdrawal.php">Withdrawal</a>
 </div>
 
 

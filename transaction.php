@@ -22,23 +22,26 @@ body,html {
     
 }
 .navbar {
-  font-family: 'Poppins', sans-serif;
   overflow: hidden;
+  background-color: rgba(0, 0, 0, 0);
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
   background-color: #000000;
 
-
 }
 
 /* Links inside the navbar */
-.navbar a {
-    float: right;
-  display: block;
-  color: #f2f2f2;
+.navbar {
+  display: inline-block;
   text-align: center;
-  padding: 14px 16px;
+  padding: 14px;
+}
+
+.navbar a {
+  font-family: 'Poppins', sans-serif;
+  color: #f2f2f2;
+  padding: 14px;
   text-decoration: none;
 }
 
@@ -136,9 +139,11 @@ tr:hover {background-color: #38ef7d;color: #000000;}
 </style>
 <body>
 <div class="navbar">
+<a href="bankmain.php">Home</a>
 <a href="Mtransfer.php">Fund Transfer</a>
-<a href="customers.php">Customers</a>
-  <a href="bankmain.php">Home</a>
+  <a href="customers.php">Customers</a>
+  <a href="deposit.php">Deposit</a>
+  <a href="withdrawal.php">Withdrawal</a>
 </div>
 
 <h1 class='h1'>Transactions</h1>

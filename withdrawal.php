@@ -6,7 +6,7 @@ include 'dbconnection.php';
 ?>
 <!DOCTYPE html>
 <head>
-    <title>Fund Transfer</title>
+    <title>Withdrawal</title>
 </head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
@@ -49,7 +49,7 @@ h1{
 
 .navbar {
   overflow: hidden;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0);
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
@@ -58,15 +58,18 @@ h1{
 }
 
 /* Links inside the navbar */
-.navbar a {
-  float: right;
-  display: block;
-  color: #f2f2f2;
+.navbar {
+  display: inline-block;
   text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+  padding: 14px;
 }
 
+.navbar a {
+  font-family: 'Poppins', sans-serif;
+  color: #f2f2f2;
+  padding: 14px;
+  text-decoration: none;
+}
 /* Change background on mouse-over */
 .navbar a:hover {
   background: #38ef7d;;
@@ -216,12 +219,14 @@ form {
 </style>
 <body>
 <div class="navbar">
+<a href="bankmain.php">Home</a>
 <a href="Mtransfer.php">Fund Transfer</a>
-<a href="customers.php">Customers</a>
-  <a href="bankmain.php">Home</a>
+  <a href="customers.php">Customers</a>
+  <a href="transaction.php">Transaction</a>
+  <a href="withdrawal.php">Withdrawal</a>
 </div>
   <div id="box">
-<h1 class='Fund'>Deposit</h1>
+<h1 class='Fund'>Withdrawal</h1>
 
 <div class='main'>
 <form action="" method="GET">
@@ -240,7 +245,7 @@ form {
                 </select>
 		<h2 class= amount>Amount </h2>
 		<input class = amounttotransfer type="number" name="amt" value=""><br>
-		<input type="submit" id= submit name="submit" value=" Deposit">
+		<input type="submit" id= submit name="submit" value=" Withdraw">
 	</form>
 </div>
 
@@ -255,12 +260,12 @@ form {
 			if($u1!=""  && $amt!="")
 			{
 				//update transaction changes in database
-				$query1= "UPDATE bank  SET balance = balance + '$amt' WHERE name = '$u1' ";
+				$query1= "UPDATE bank  SET balance = balance - '$amt' WHERE name = '$u1' ";
 				$data1= mysqli_query($db_handler, $query1);
 				
 				
 				//insert into transaction_history
-				    $query1 = "INSERT INTO transfer (sender,reciever,amount) VALUES('$u1','Self-Deposit','$amt')";
+				    $query1 = "INSERT INTO transfer (sender,reciever,amount) VALUES('$u1','Withdrawal','$amt')";
                                     $res2 = mysqli_query($db_handler,$query1);
 				
                                           if($res2){

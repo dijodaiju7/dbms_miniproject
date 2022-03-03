@@ -12,6 +12,7 @@
 			content="width=device-width,
 					initial-scale=1" />
 		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 			* {
 				box-sizing: border-box;
 			}
@@ -21,8 +22,7 @@
 				height: 100vh;
 				width: 100vw;
 				overflow: hidden;
-				font-family: "Lato", sans-serif;
-				font-weight: 700;
+				font-family: 'Poppins', sans-serif;
 				/* To make all the elements center */
 				display: flex;
 				align-items: center;
@@ -40,9 +40,11 @@
 				border-radius: 20px;
                 background-image: linear-gradient(#000000, #202020);
 				/* Box-shadow for 3d visualization*/
-				box-shadow:
+				/* box-shadow:
 				-3px -3px 3px #48494B,
-				3px 3px 3px rgba(0, 0, 0, 0.2);
+				3px 3px 3px rgba(0, 0, 0, 0.2); */
+				border-style: solid;
+				border-color: #202020;
 			}
 			.lgn-logo {
                 content: url("login.png");
@@ -52,24 +54,25 @@
 				border-radius: 50%;
 				margin: 0 auto;
 				/* Box-shadow for logo */
-				box-shadow: 0px 0px 2px #48494B,
+				/* box-shadow: 0px 0px 2px #48494B,
 				0px 0px 0px 5px #48494B,
 				3px 3px 3px #48494B,
-				-8px -8px 15px #48494B;
+				-8px -8px 15px #48494B; */
 			}
 			.lgn-title {
 				text-align: center;
 				font-size: 28px;
 				padding-top: 24px;
 				letter-spacing: 0.5px;
-				color:  #28AF63;
+				color:  #38ef7d;
+				font-weight: 700;
 			}
 			.lgn-sub-title {
 				text-align: center;
 				font-size: 15px;
 				padding-top: 7px;
-				letter-spacing: 3px;
-				color:  #28AF63;
+				letter-spacing: 1px;
+				color:  #38ef7d;
 			}
 			.lgn-input-fields {
 				width: 100%;
@@ -90,8 +93,10 @@
 				margin-bottom: 20px;
 				border-radius: 10px;
 				/* Box-shadow for 3d */
-				box-shadow: inset 2px 2px 2px #48494B,
-				inset -2px -2px 2px #48494B;
+				/* box-shadow: inset 2px 2px 2px #48494B,
+				inset -2px -2px 2px #48494B; */
+				border-style: ridge;
+				border-color: #202020;
 			}
 			.lgn-input-fields svg {
 				height: 22px;
@@ -107,13 +112,10 @@
 				height: 60px;
 				border-radius: 15px;
 				font-size: 20px;
-				font-weight: 700;
-				font-family: "Lato", sans-serif;
+				font-weight: 400;
 				color: #fff;
 				text-align: center;
-				background:  #28AF63;
-				box-shadow: 2px 2px 2px #48494B,
-				-2px -2px 2px #48494B;
+				background:  #38ef7d;
 				transition: 0.5s;
 			}
 			.lgn-button:hover {

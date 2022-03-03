@@ -49,7 +49,7 @@ h1{
 
 .navbar {
   overflow: hidden;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0);
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
@@ -58,12 +58,16 @@ h1{
 }
 
 /* Links inside the navbar */
-.navbar a {
-  float: right;
-  display: block;
-  color: #f2f2f2;
+.navbar {
+  display: inline-block;
   text-align: center;
-  padding: 14px 16px;
+  padding: 14px;
+}
+
+.navbar a {
+  font-family: 'Poppins', sans-serif;
+  color: #f2f2f2;
+  padding: 14px;
   text-decoration: none;
 }
 
@@ -216,9 +220,11 @@ form {
 </style>
 <body>
 <div class="navbar">
+<a href="bankmain.php">Home</a>
 <a href="Mtransfer.php">Fund Transfer</a>
-<a href="customers.php">Customers</a>
-  <a href="bankmain.php">Home</a>
+  <a href="customers.php">Customers</a>
+  <a href="transaction.php">Transaction</a>
+  <a href="withdrawal.php">Withdrawal</a>
 </div>
   <div id="box">
 <h1 class='Fund'>Deposit</h1>
