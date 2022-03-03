@@ -6,7 +6,7 @@ include 'dbconnection.php';
 ?>
 <!DOCTYPE html>
 <head>
-    <title>Fund Transfer</title>
+    <title>Deposit</title>
 </head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
